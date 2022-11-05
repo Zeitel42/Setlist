@@ -9,14 +9,14 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
+        {/* <Route path="/" element={<App />} /> */}
         <Route path="/Login" element={<Login />} />
       </Routes>
-
-      <header className="App-header">
-        <h1>Set List Game</h1>
-      </header>
-
-      <p>This will be the app</p>
+      <main>
+        <header className="App-body">
+          <h1>This will be the body of the app</h1>
+        </header>
+      </main>
       <Footer />
     </div>
   );
