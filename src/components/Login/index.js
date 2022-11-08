@@ -5,7 +5,7 @@ function Login() {
   return (
     <div className="login">
       <header className="App-header">
-        <h1>This will be the login page</h1>
+        <h1>This will be the Login page</h1>
       </header>
     </div>
   );

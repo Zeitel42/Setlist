@@ -2,7 +2,12 @@ import React from "react";
 import "../../style/index.css";
 
 const Footer = () => {
-  return <h1 className="footer">This is the Footer</h1>;
+  return (
+    <div className="footer fixed-bottom">
+      <p>All Rights Reserved ZEitel42</p>
+      <p>&copy; Copyright 2022</p>
+    </div>
+  );
 };
 
 export default Footer;

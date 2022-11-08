@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <div className="home-page">
       <header className="App-header">
-        <h1>This will be the HomePage</h1>
+        <h1>This will be the Home page</h1>
       </header>
     </div>
   );

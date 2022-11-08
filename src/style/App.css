@@ -27,12 +27,12 @@
   color: white;
 }
 
-.NavBar {
-  height: 20vmin;
+.footer {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  justify-content: space-evenly
+  justify-content: space-between;
+  padding: 0px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
 }
 .App-link {
   color: #61dafb;

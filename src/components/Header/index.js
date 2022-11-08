@@ -1,15 +1,14 @@
 import React from "react";
 import "../../style/index.css";
-import Nav from "../Nav";
+import NavBar from "../NavBar";
 
 const Header = () => {
   const path = window.location.pathname;
   return (
     <div>
       <header className="App-header">
-        <h1>This is the Header</h1>
+        <NavBar />
       </header>
-      <Nav />
     </div>
   );
 };
