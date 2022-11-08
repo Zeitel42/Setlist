@@ -2,9 +2,12 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.App-body {
+  height: 60vmin;
   pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,7 +18,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +27,13 @@
   color: white;
 }
 
+.NavBar {
+  height: 20vmin;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-content: space-evenly
+}
 .App-link {
   color: #61dafb;
 }

@@ -6,7 +6,11 @@ import App from "../../App";
 const Nav = () => {
   return (
     <div>
-      <Link to="/Login">Login</Link>
+      <div className="NavBar">
+        <Link to="/Login">Login</Link>
+        <Link to="/SignUp">Sign Up</Link>
+        <Link to="/HomePage">Home</Link>
+      </div>
     </div>
   );
 };

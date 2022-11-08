@@ -3,20 +3,18 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HomePage from "./components/HomePage";
+import SignUp from "./components/SignUp";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        {/* <Route path="/" element={<App />} /> */}
+        <Route path="/HomePage" element={<HomePage />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/SignUp" element={<SignUp />} />
       </Routes>
-      <main>
-        <header className="App-body">
-          <h1>This will be the body of the app</h1>
-        </header>
-      </main>
       <Footer />
     </div>
   );
