@@ -21,6 +21,9 @@ const NavBar = () => {
         <Nav.Link as={Link} to="/SignUp">
           Sign Up
         </Nav.Link>
+        <Nav.Link as={Link} to="/Setlist">
+          Set List
+        </Nav.Link>
       </Nav>
     </Navbar>
   );
