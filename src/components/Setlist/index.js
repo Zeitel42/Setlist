@@ -1,37 +1,56 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 import ListGroup from "react-bootstrap/ListGroup";
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { BsPlusCircle } from "react-icons/bs";
+import CountdownTimer from "../CountdownTimer/CountdownTimer";
 
 const Setlist = () => {
+  const daysToShow = 198 * 24 * 60 * 60 * 1000;
+  const timeNow = new Date().getTime();
+  const showTime = timeNow + daysToShow;
+
   return (
     <div>
       <div className="show-title w=80">
         <ListGroup horizontal>
           <Container>
             <ListGroup.Item className="band-name">
-              Dead & Company
+              <h1>Dead & Company</h1>
             </ListGroup.Item>
           </Container>
           <Container>
-            <ListGroup.Item className="venue-name">Walnut Creek</ListGroup.Item>
+            <ListGroup.Item className="venue-name">
+              <h1>Walnut Creek</h1>
+            </ListGroup.Item>
           </Container>
           <Container>
             <ListGroup.Item className="show-date-time">
-              June 01, 2023
+              <h1>June O1, 2023 7pm</h1>
+              <Container>
+                <CountdownTimer targetDate={showTime} />
+              </Container>
             </ListGroup.Item>
           </Container>
         </ListGroup>
       </div>
       <div>
         <h5 className="countdown">Countdown to Showtime!</h5>
-        <h4>99:99</h4>
+        <h4></h4>
       </div>
       <Container className="sets">
         <Container>
           <Card className="set-one">
-            <h2>Set One</h2>
+            <div>
+              <h2>Set One </h2>
+
+              <Button className="add-set-one">
+                <BsPlusCircle />
+              </Button>
+              <p>Add a Song</p>
+            </div>
             <Table striped bordered hover size="sm" variant="dark">
               <thead>
                 <tr>
@@ -62,7 +81,14 @@ const Setlist = () => {
         </Container>
         <Container>
           <Card className="set-two">
-            <h2>Set Two</h2>
+            <div>
+              <h2>Set Two </h2>
+
+              <Button className="add-set-two">
+                <BsPlusCircle />
+              </Button>
+              <p>Add a Song</p>
+            </div>
             <Table striped bordered condensed hover variant="dark">
               <thead>
                 <tr>
@@ -108,7 +134,14 @@ const Setlist = () => {
         </Container>
         <Container>
           <Card className="encore">
-            <h2>Encore</h2>
+            <div>
+              <h2>Encore </h2>
+
+              <Button className="add-encore">
+                <BsPlusCircle />
+              </Button>
+              <p>Add a Song</p>
+            </div>
             <Table striped bordered condensed hover variant="dark">
               <thead>
                 <tr>
