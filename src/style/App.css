@@ -46,3 +46,9 @@
     transform: rotate(360deg);
   }
 }
+.show-counter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: blue;
+}
