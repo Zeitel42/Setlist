@@ -1,16 +1,16 @@
 import React from "react";
-import "../../style/index.css";
+import "../../../style/index.css";
 import Button from "react-bootstrap/Button";
 import { BsPlusCircle } from "react-icons/bs";
 import Table from "react-bootstrap/Table";
 
-const SetTwo = () => {
+const Encore = () => {
   return (
     <div>
       <div>
-        <h2>Set Two </h2>
+        <h2>Encore </h2>
 
-        <Button className="add-set-two">
+        <Button className="add-encore">
           <BsPlusCircle />
         </Button>
         <p>Add a Song</p>
@@ -26,37 +26,22 @@ const SetTwo = () => {
         <tbody>
           <tr>
             <td>1</td>
-            <td>Playing in the Band</td>
-            <td>{">"}</td>
+            <td>Playing in the Band reprise</td>
+            <td> {">"} </td>
           </tr>
           <tr>
             <td>2</td>
-            <td>St. Stephen</td>
+            <td>Attics of My Life</td>
             <td></td>
           </tr>
           <tr>
             <td>3</td>
-            <td>Bird Song</td>
+            <td>One More Saturday Night</td>
             <td>{">"}</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Drums/Space</td>
-            <td> {">"} </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Playing in the Band reprise</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>Mississippi Half Step</td>
-            <td></td>
           </tr>
         </tbody>
       </Table>
     </div>
   );
 };
-export default SetTwo;
+export default Encore;

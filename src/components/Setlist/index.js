@@ -6,9 +6,9 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { BsPlusCircle } from "react-icons/bs";
 import CountdownTimer from "../CountdownTimer/CountdownTimer";
-import SetOne from "../SetOne";
-import SetTwo from "../SetTwo";
-import Encore from "../Encore";
+import SetOne from "../Setlist/SetOne";
+import SetTwo from "../Setlist/SetTwo";
+import Encore from "../Setlist/Encore";
 
 const Setlist = () => {
   const daysToShow = 198 * 24 * 60 * 60 * 1000;
