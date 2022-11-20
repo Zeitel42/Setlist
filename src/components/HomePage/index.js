@@ -4,7 +4,7 @@ import App from "../../App";
 import Login from "../Login";
 import SignUp from "../SignUp";
 
-function HomePage() {
+const HomePage = () => {
   return (
     <div className="home-page">
       <header className="App-header">
@@ -12,6 +12,6 @@ function HomePage() {
       </header>
     </div>
   );
-}
+};
 
 export default HomePage;

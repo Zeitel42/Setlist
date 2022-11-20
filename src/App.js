@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
 import SignUp from "./components/SignUp";
 import Setlist from "./components/Setlist";
+import SongList from "./components/SongList";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Setlist" element={<Setlist />} />
+        <Route path="/SongList" element={<SongList />} />
       </Routes>
       <Footer />
     </div>

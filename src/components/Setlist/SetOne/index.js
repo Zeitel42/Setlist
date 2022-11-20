@@ -32,9 +32,6 @@ const SetOne = () => {
             <td>1</td>
             <td className="songs">
               <SetOneSongOne />
-              <Button className="add-song-one">
-                <BsPlusCircle />
-              </Button>
             </td>
           </tr>
           <tr className="setOneSongTwo">
