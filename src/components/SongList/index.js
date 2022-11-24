@@ -4,6 +4,9 @@ import { BsPlusCircle } from "react-icons/bs";
 import ListGroup from "react-bootstrap/ListGroup";
 // import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import Modal from "react-bootstrap/Modal";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const SongListModal = ({ callback }) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -80,15 +83,20 @@ const SongListModal = ({ callback }) => {
           <ListGroup as="ul" className="">
             {songs.map((song, id) => (
               <ListGroup.Item as="li" key={id}>
-                {song.name}
-                <Button
-                  onClick={() => {
-                    setSongChoice(song.name);
-                    callback(choice);
-                  }}
-                >
-                  <BsPlusCircle />
-                </Button>
+                <Row>
+                  <Col>{song.name}</Col>
+                  <Col>
+                    <Button
+                      onClick={() => {
+                        setSongChoice(song.name);
+                        callback(song.name);
+                        setIsOpen(false);
+                      }}
+                    >
+                      <BsPlusCircle />
+                    </Button>
+                  </Col>
+                </Row>
               </ListGroup.Item>
             ))}
           </ListGroup>

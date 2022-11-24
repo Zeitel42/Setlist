@@ -13,7 +13,6 @@ import SetOneSongSeven from "./SetOneSong7";
 import SetOneSongEight from "./SetOneSong8";
 import SetOneSongNine from "./SetOneSong9";
 import SetOneSongTen from "./SetOneSong10";
-import SetOneSongTest from "./SetOneSongTest";
 
 const SetOne = () => {
   return (
