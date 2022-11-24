@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-const SetOneSongSix = () => {
-  const [songSix, setSongSix] = useState("");
+import Song from "../../../Song";
 
+const SetOneSongSix = () => {
   return (
     <div>
-      <p>Song Six</p>
+      <Song />
     </div>
   );
 };
