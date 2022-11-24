@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import { BsPlusCircle } from "react-icons/bs";
 import ListGroup from "react-bootstrap/ListGroup";
+// import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import Modal from "react-bootstrap/Modal";
 
-const SongList = () => {
-  const addToSet = () => {};
+const SongListModal = ({ callback }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
 
-  const [songs] = useState([
+  const showModal = () => {
+    setIsOpen(true);
+  };
+
+  const hideModal = () => {
+    setIsOpen(false);
+  };
+
+  let choice = "";
+  const songs = [
     {
       id: "1",
       name: "Touch of Grey",
@@ -52,25 +63,39 @@ const SongList = () => {
       id: "11",
       name: "Ramble on Rose",
     },
-  ]);
+  ];
+  const [songChoice, setSongChoice] = useState("");
+  useEffect(() => {
+    choice = songChoice;
+    console.log(choice);
+  });
 
   return (
     <div>
-      <header className="App-header">
-        <h1>Song List</h1>
-      </header>
-      <ListGroup as="ul" className="">
-        {songs.map((song) => (
-          <ListGroup.Item as="li" key={song.name}>
-            {song.name}
-            <Button onClick={addToSet()} className="add-song-one">
-              <BsPlusCircle />
-            </Button>
-          </ListGroup.Item>
-        ))}
-      </ListGroup>
+      <Button onClick={showModal}>
+        <BsPlusCircle />
+      </Button>
+      <Modal show={isOpen} onHide={hideModal}>
+        <Modal.Body>
+          <ListGroup as="ul" className="">
+            {songs.map((song, id) => (
+              <ListGroup.Item as="li" key={id}>
+                {song.name}
+                <Button
+                  onClick={() => {
+                    setSongChoice(song.name);
+                    callback(choice);
+                  }}
+                >
+                  <BsPlusCircle />
+                </Button>
+              </ListGroup.Item>
+            ))}
+          </ListGroup>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 };
 
-export default SongList;
+export default SongListModal;
