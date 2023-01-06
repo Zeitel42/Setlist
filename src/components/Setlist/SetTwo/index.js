@@ -1,62 +1,97 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../style/index.css";
 import Button from "react-bootstrap/Button";
 import { BsPlusCircle } from "react-icons/bs";
 import Table from "react-bootstrap/Table";
+import SetTwoSongOne from "./SetTwoSong1";
+import SetTwoSongTwo from "./SetTwoSong2";
+import SetTwoSongThree from "./SetTwoSong3";
+import SetTwoSongFour from "./SetTwoSong4";
+import SetTwoSongFive from "./SetTwoSong5";
+import SetTwoSongSix from "./SetTwoSong6";
+import SetTwoSongSeven from "./SetTwoSong7";
+import SetTwoSongEight from "./SetTwoSong8";
+import SetTwoSongNine from "./SetTwoSong9";
+import SetTwoSongTen from "./SetTwoSong10";
 
 const SetTwo = () => {
   return (
     <div>
       <div>
         <h2>Set Two </h2>
-
-        <Button className="add-set-two">
-          <BsPlusCircle />
-        </Button>
-        <p>Add a Song</p>
       </div>
-      <Table striped bordered condensed hover variant="dark">
+      <Table striped bordered hover size="sm" variant="dark">
         <thead>
           <tr>
             <th>#</th>
             <th>Song Title</th>
-            <th>Add {">"} for into</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr className="setTwoSongOne">
             <td>1</td>
-            <td>Playing in the Band</td>
-            <td>{">"}</td>
+            <td className="songs">
+              <SetTwoSongOne />
+            </td>
           </tr>
-          <tr>
+          <tr className="setTwoSongTwo">
             <td>2</td>
-            <td>St. Stephen</td>
-            <td></td>
+            <td className="songs">
+              <SetTwoSongTwo />
+            </td>
           </tr>
-          <tr>
+          <tr className="setTwoSongThree">
             <td>3</td>
-            <td>Bird Song</td>
-            <td>{">"}</td>
+            <td className="songs">
+              <SetTwoSongThree />
+            </td>
           </tr>
-          <tr>
+          <tr className="setTwoSongFour">
             <td>4</td>
-            <td>Drums/Space</td>
-            <td> {">"} </td>
+            <td className="songs">
+              <SetTwoSongFour />
+            </td>
           </tr>
-          <tr>
+          <tr className="setTwoSongFive">
             <td>5</td>
-            <td>Playing in the Band reprise</td>
-            <td></td>
+            <td className="songs">
+              <SetTwoSongFive />
+            </td>
           </tr>
-          <tr>
+          <tr className="setTwoSongSix">
             <td>6</td>
-            <td>Mississippi Half Step</td>
-            <td></td>
+            <td className="songs">
+              <SetTwoSongSix />
+            </td>
+          </tr>
+          <tr className="setTwoSongSeven">
+            <td>7</td>
+            <td className="songs">
+              <SetTwoSongSeven />
+            </td>
+          </tr>
+          <tr className="setTwoSongEight">
+            <td>8</td>
+            <td className="songs">
+              <SetTwoSongEight />
+            </td>
+          </tr>
+          <tr className="setTwoSongNine">
+            <td>9</td>
+            <td className="songs">
+              <SetTwoSongNine />
+            </td>
+          </tr>
+          <tr className="setTwoSongTen">
+            <td>10</td>
+            <td className="songs">
+              <SetTwoSongTen />
+            </td>
           </tr>
         </tbody>
       </Table>
     </div>
   );
 };
+
 export default SetTwo;

@@ -3,7 +3,7 @@
 }
 
 .App-body {
-  height: 60vmin;
+  height: calc(100vh - 2px);
   pointer-events: none;
   display: flex;
   align-items: center;
@@ -27,13 +27,7 @@
   color: white;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-}
+
 .App-link {
   color: #61dafb;
 }

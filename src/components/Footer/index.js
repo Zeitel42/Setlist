@@ -1,11 +1,11 @@
 import React from "react";
-import "../../style/index.css";
+import "./footer.css";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <p>All Rights Reserved Zeitel42</p>
-      <p>&copy; Copyright 2022</p>
+      <p className="arr-ze">All Rights Reserved Zeitel42</p>
+      <p className="copy">&copy; Copyright 2022</p>
     </div>
   );
 };

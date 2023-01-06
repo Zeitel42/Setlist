@@ -70,7 +70,7 @@ const SongListModal = ({ callback }) => {
   const [songChoice, setSongChoice] = useState("");
   useEffect(() => {
     choice = songChoice;
-    console.log(choice);
+    // console.log(choice);
   });
 
   return (
