@@ -24,7 +24,7 @@ const SetOne = () => {
         <thead>
           <tr>
             <th>#</th>
-            <th>Song Title</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>

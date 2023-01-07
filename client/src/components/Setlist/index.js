@@ -26,7 +26,7 @@ const Setlist = () => {
           </Container>
           <Container>
             <ListGroup.Item className="venue-name">
-              <h1>Walnut Creek</h1>
+              <h1>PITS Night One</h1>
             </ListGroup.Item>
           </Container>
           <Container>

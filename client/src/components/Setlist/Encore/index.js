@@ -12,13 +12,13 @@ const Encore = () => {
   return (
     <div>
       <div>
-        <h2>Set One </h2>
+        <h2>Encore</h2>
       </div>
       <Table striped bordered hover size="sm" variant="dark">
         <thead>
           <tr>
             <th>#</th>
-            <th>Song Title</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
